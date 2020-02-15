@@ -1,4 +1,4 @@
-print("linklist")
+print("This is a simple linklist program")
 
 
 class Node:
