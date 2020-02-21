@@ -3,7 +3,8 @@ class base:
         self.constant = 1
     def method(self):
         print("this is base class.")
-
+    def getconstant(self):
+        return self.constant
 
 class derrived(base):
     def __init__(self):
@@ -14,7 +15,8 @@ class derrived(base):
     def calling(self):
         self.method()
         base.method(self)
-        print(self.constant)
+        # print(self.constant)
+        print(base.getconstant(self))
 
     def method(self):
         print("this is derrived class")
