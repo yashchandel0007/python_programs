@@ -22,3 +22,23 @@ class derrived(base):
         print("this is derrived class")
 
 object = derrived()
+
+
+class A:
+    def function(self):
+        print("this is function A")
+
+
+class B(A):
+    def function(self):
+        print("this is function B")
+        super(B, self).function()
+
+
+class C(B):
+    def function(self):
+        print("this is function C")
+        super(C, self).function()
+
+newObject = C()
+newObject.function()
